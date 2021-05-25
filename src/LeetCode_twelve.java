@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class LeetCode_twelve {
+public class LeetCode_Twelve {
     public String intToRoman(int num) {
         if (num < 1 || num > 3999) return "";
 //        把对应的匹配值放到map里面
@@ -56,7 +56,7 @@ public class LeetCode_twelve {
     }
 
     public static void main(String[] args) {
-        LeetCode_twelve leetCode_twelve = new LeetCode_twelve();
+        LeetCode_Twelve leetCode_twelve = new LeetCode_Twelve();
         System.out.println(leetCode_twelve.intToRoman(588));
     }
 }

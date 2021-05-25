@@ -1,4 +1,4 @@
-public class LeetCode_eleven {
+public class LeetCode_Eleven {
     public int maxArea(int[] height) {
         int length = height.length;
         int[][] intArray = new int[length + 1][1];
@@ -31,8 +31,8 @@ public class LeetCode_eleven {
     }
 
     public static void main(String[] args) {
-        LeetCode_eleven leetCode_eleven = new LeetCode_eleven();
+        LeetCode_Eleven LeetCode_Eleven = new LeetCode_Eleven();
         int[] a = new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7};
-        System.out.println(leetCode_eleven.maxArea(a));
+        System.out.println(LeetCode_Eleven.maxArea(a));
     }
 }

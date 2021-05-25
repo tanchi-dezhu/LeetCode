@@ -1,4 +1,4 @@
-public class LeetCode_four {
+public class LeetCode_Four {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int i = 0, j = 0, k = 0;
 //        创建一个新的数组,把两个数组由小到大进行排列
@@ -34,7 +34,7 @@ public class LeetCode_four {
     }
 
     public static void main(String[] args) {
-        LeetCode_four leetCode_four = new LeetCode_four();
+        LeetCode_Four leetCode_four = new LeetCode_Four();
         int[] a = new int[]{2, 3, 4};
         int[] b = new int[]{4, 6, 5};
         System.out.println(leetCode_four.findMedianSortedArrays(a, b));

@@ -1,5 +1,5 @@
 
-public class LeetCode_six {
+public class LeetCode_Six {
     public String convert(String s, int numRows) {
 //        判断是否为空，以及行数是否位1
         if (s == null || s.length() == 0 || numRows <= 1) return s;
@@ -28,7 +28,7 @@ public class LeetCode_six {
     }
 
     public static void main(String args[]) {
-        LeetCode_six leetCode_six = new LeetCode_six();
+        LeetCode_Six leetCode_six = new LeetCode_Six();
         System.out.println(leetCode_six.convert("LEETCODEISHIRING", 3));
     }
 }

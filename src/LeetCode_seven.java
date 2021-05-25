@@ -1,4 +1,4 @@
-public class LeetCode_seven {
+public class LeetCode_Seven {
     public int reverse(int x) {
         int ans = 0;
         while (x != 0) {
@@ -14,7 +14,7 @@ public class LeetCode_seven {
         return ans;
     }
     public static void main(String args[]){
-        LeetCode_seven leetCode_six = new LeetCode_seven();
+        LeetCode_Seven leetCode_six = new LeetCode_Seven();
         int number=leetCode_six.reverse(1534236469);
         int b=3/10;
         System.out.println(number);

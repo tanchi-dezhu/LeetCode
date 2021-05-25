@@ -1,4 +1,4 @@
-public class LeetCode_nine {
+public class LeetCode_Nine {
     public boolean isPalindrome(int x) {
         if (x<0) return false;
         int help = 1;
@@ -23,7 +23,7 @@ public class LeetCode_nine {
     }
 
     public static void main(String[] args) {
-        LeetCode_nine leetCode_nine=new LeetCode_nine();
+        LeetCode_Nine leetCode_nine=new LeetCode_Nine();
         System.out.println(leetCode_nine.isPalindrome(1231));
     }
 }

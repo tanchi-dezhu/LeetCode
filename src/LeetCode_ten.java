@@ -1,4 +1,4 @@
-public class LeetCode_ten {
+public class LeetCode_Ten {
     public boolean isMatch(String s, String p) {
         if (p.isEmpty()) return s.isEmpty();
         boolean first_match = (!s.isEmpty() && (p.charAt(0) == s.charAt(0) || p.charAt(0) == '.'));
@@ -12,7 +12,7 @@ public class LeetCode_ten {
     }
 
     public static void main(String[] args) {
-        LeetCode_ten leetCode_ten = new LeetCode_ten();
+        LeetCode_Ten leetCode_ten = new LeetCode_Ten();
         System.out.println(leetCode_ten.isMatch("aa", ".*b"));
     }
 }

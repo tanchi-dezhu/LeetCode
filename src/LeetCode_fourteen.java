@@ -1,4 +1,4 @@
-public class LeetCode_fourteen {
+public class LeetCode_Fourteen {
     public String longestCommonPrefix(String[] strs) {
         if (strs.length < 1 || strs == null) return "";
         String s1 = "";
@@ -28,7 +28,7 @@ public class LeetCode_fourteen {
     }
 
     public static void main(String[] args) {
-        LeetCode_fourteen leetCode_fourteen = new LeetCode_fourteen();
+        LeetCode_Fourteen leetCode_fourteen = new LeetCode_Fourteen();
         String[] strings = new String[]{"aca", "cba"};
         System.out.println(leetCode_fourteen.longestCommonPrefix(strings));
     }

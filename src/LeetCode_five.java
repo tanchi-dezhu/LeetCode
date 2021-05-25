@@ -1,4 +1,4 @@
-public class LeetCode_five {
+public class LeetCode_Five {
     public String longestPalindrome(String s) {
         if (s == null || s.length() < 1) return "";
         int start = 0, end = 0;
@@ -27,7 +27,7 @@ public class LeetCode_five {
     }
 
     public static void main(String[] args) {
-        LeetCode_five leetCode_five=new LeetCode_five();
+        LeetCode_Five leetCode_five=new LeetCode_Five();
         System.out.println(leetCode_five.longestPalindrome("csdeedn"));
     }
 }

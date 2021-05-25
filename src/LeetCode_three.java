@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class LeetCode_three {
+public class LeetCode_Three {
     public int lengthOfLongestSubstring(String s) {
         int n = s.length(), ans = 0;
         Map<Character, Integer> map = new HashMap<>();
@@ -21,7 +21,7 @@ public class LeetCode_three {
     }
 
     public static void main(String[] args) {
-        LeetCode_three leetCode_three=new LeetCode_three();
+        LeetCode_Three leetCode_three=new LeetCode_Three();
         System.out.println(leetCode_three.lengthOfLongestSubstring("dengbasg"));
     }
 }

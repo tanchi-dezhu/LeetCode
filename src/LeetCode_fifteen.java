@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class LeetCode_fifteen {
+public class LeetCode_Fifteen {
     public static List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> ans = new ArrayList();
         int len = nums.length;
@@ -29,7 +29,7 @@ public class LeetCode_fifteen {
     }
 
     public static void main(String[] args) {
-        LeetCode_fifteen leetCode_fifteen = new LeetCode_fifteen();
+        LeetCode_Fifteen leetCode_fifteen = new LeetCode_Fifteen();
         List list = new ArrayList();
         int[] num = new int[]{-1, 0, 1, 2, -1, -4};
         list = leetCode_fifteen.threeSum(num);

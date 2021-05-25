@@ -1,7 +1,7 @@
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class LeetCode_eight {
+public class LeetCode_Eight {
 //    创建正则表达式
 //    1、+—不能同时出现
     final static Pattern pattern = Pattern.compile("[-+]?[0-9]+");
@@ -24,7 +24,7 @@ public class LeetCode_eight {
     }
 
     public static void main(String args[]) {
-        LeetCode_eight leetCode_seven = new LeetCode_eight();
+        LeetCode_Eight leetCode_seven = new LeetCode_Eight();
         int num = leetCode_seven.myAtoi("  +-2215 wr 165 ");
         System.out.println(num);
     }

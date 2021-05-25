@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class LeetCode_thirteen {
+public class LeetCode_Thirteen {
     public int romanToInt(String s) {
         if (s == null || s.length() == 0) return 0;
 //        存放键值
@@ -37,7 +37,7 @@ public class LeetCode_thirteen {
     }
 
     public static void main(String[] args) {
-        LeetCode_thirteen leetCode_thirteen = new LeetCode_thirteen();
+        LeetCode_Thirteen leetCode_thirteen = new LeetCode_Thirteen();
         System.out.println(leetCode_thirteen.romanToInt("III"));
     }
 }

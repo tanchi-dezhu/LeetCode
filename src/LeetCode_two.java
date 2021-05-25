@@ -1,4 +1,4 @@
-public class LeetCode_two {
+public class LeetCode_Two {
     public static class ListNode
     {
         int val;
@@ -35,7 +35,7 @@ public class LeetCode_two {
         return pre.next;
     }
     public static void main(String args[]){
-        LeetCode_two leetCode_two=new LeetCode_two();
+        LeetCode_Two leetCode_two=new LeetCode_Two();
         ListNode l1=new ListNode(1);
         ListNode l2=new ListNode(4);
         System.out.println(leetCode_two.addTwoNumbers(l1,l2).val);
