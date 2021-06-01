@@ -1,4 +1,4 @@
-public class LeetCode_One {
+public class LeetCode_1 {
     public int[] twoSum(int[] nums, int target) {
         int arry[]=new int[2];
         for(int i=0;i<nums.length;i++){
@@ -20,7 +20,7 @@ public class LeetCode_One {
         return arry;
     }
     public static void main(String args[]){
-        LeetCode_One leetCode_one=new LeetCode_One();
+        LeetCode_1 leetCode_one=new LeetCode_1();
         int[] num=new int[]{15,28,36};
         int[] end=leetCode_one.twoSum(num,51);
     }

@@ -6,7 +6,7 @@ import java.util.List;
  * @author jun
  * @date 2021年05月31日 21:11
  */
-public class LeetCode_Egihteen {
+public class LeetCode_18 {
     public static List<List<Integer>> fourSum(int[] nums, int target) {
         List<List<Integer>> quadruplets = new ArrayList<List<Integer>>();
         if (nums == null || nums.length < 4) {

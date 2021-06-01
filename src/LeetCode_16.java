@@ -4,7 +4,7 @@ import java.util.Arrays;
  * @author jun
  * @date 2021年05月24日 14:31
  */
-public class LeetCode_Sixteen {
+public class LeetCode_16 {
     public static void main(String[] args) {
 //        int[] nums = {1, 3, 4, -1, -3};
         int[] nums = {-3, -1, 1, 3, 4,};

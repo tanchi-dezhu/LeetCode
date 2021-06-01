@@ -4,9 +4,9 @@ import java.util.*;
  * @author jun
  * @date 2021年05月25日 11:29
  */
-public class LeetCode_Seventeen {
+public class LeetCode_17 {
     public static void main(String[] args) {
-        LeetCode_Seventeen leetCodeSeventeen = new LeetCode_Seventeen();
+        LeetCode_17 leetCodeSeventeen = new LeetCode_17();
         List<String> strings = leetCodeSeventeen.letterCombinations("234");
         System.out.println(strings);
 
