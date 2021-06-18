@@ -51,7 +51,7 @@ public class LeetCode_28
 
     public static void main(String[] args)
     {
-        System.out.println(strStr("", ""));
+        System.out.println(strStr("hello", "ll"));
     }
 }
 
