@@ -1,3 +1,4 @@
+package leetcode;
 
 public class LeetCode_6 {
     public String convert(String s, int numRows) {

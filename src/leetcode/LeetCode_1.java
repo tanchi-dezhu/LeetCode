@@ -1,3 +1,5 @@
+package leetcode;
+
 public class LeetCode_1 {
     public int[] twoSum(int[] nums, int target) {
         int arry[]=new int[2];

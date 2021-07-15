@@ -1,3 +1,5 @@
+package leetcode;
+
 public class LeetCode_10 {
     public boolean isMatch(String s, String p) {
         if (p.isEmpty()) return s.isEmpty();

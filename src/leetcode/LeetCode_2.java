@@ -1,3 +1,5 @@
+package leetcode;
+
 public class LeetCode_2 {
     public static class ListNode
     {

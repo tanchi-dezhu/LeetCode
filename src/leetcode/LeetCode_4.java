@@ -1,3 +1,5 @@
+package leetcode;
+
 public class LeetCode_4 {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int i = 0, j = 0, k = 0;
