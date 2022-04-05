@@ -57,10 +57,10 @@ public class LeetCode_307
 
     public static void main(String[] args)
     {
-        int[] array = new int[]{1,3,4,5,2};
+        int[] array = new int[]{1, 3, 4, 5, 2, 9};
         LeetCode_307 leetCode_307 = new LeetCode_307(array);
         System.out.println(leetCode_307.sumRange(0, 4));
-        leetCode_307.update(3,10);
+        leetCode_307.update(3, 10);
         System.out.println(leetCode_307.sumRange(0, 4));
     }
 }
