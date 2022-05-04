@@ -2,8 +2,10 @@ package leetcode.simple;
 
 import java.util.HashMap;
 
-public class LeetCode_13 {
-    public int romanToInt(String s) {
+public class LeetCode_13
+{
+    public int romanToInt(String s)
+    {
         if (s == null || s.length() == 0) return 0;
 //        存放键值
         HashMap hashMap = new HashMap();
@@ -23,14 +25,17 @@ public class LeetCode_13 {
         hashMap1.put("CM", 900);
         int end = s.length();
         int num = 0;
-        for (int i = 0; i < end; i++) {
+        for (int i = 0; i < end; i++)
+        {
             String key = String.valueOf(s.charAt(i));
-            Boolean b=hashMap.containsKey(key);
+            Boolean b = hashMap.containsKey(key);
 //            判断是否符合
-            if (i + 1 < end && hashMap1.containsKey(String.valueOf(s.charAt(i)) + String.valueOf(s.charAt(i + 1)))) {
-                    num += (int) hashMap1.get(String.valueOf(s.charAt(i)) + String.valueOf(s.charAt(i + 1)));
-                    i++;
-            } else if (b) {
+            if (i + 1 < end && hashMap1.containsKey(String.valueOf(s.charAt(i)) + String.valueOf(s.charAt(i + 1))))
+            {
+                num += (int) hashMap1.get(String.valueOf(s.charAt(i)) + String.valueOf(s.charAt(i + 1)));
+                i++;
+            } else if (b)
+            {
                 String s1 = String.valueOf(key);
                 num += (int) hashMap.get(s1);
             }
@@ -38,7 +43,8 @@ public class LeetCode_13 {
         return num;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         LeetCode_13 leetCode_thirteen = new LeetCode_13();
         System.out.println(leetCode_thirteen.romanToInt("III"));
     }

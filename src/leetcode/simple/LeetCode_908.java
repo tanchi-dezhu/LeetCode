@@ -12,7 +12,7 @@ public class LeetCode_908
 
     public static void main(String[] args)
     {
-        int[] arrays = new int[]{1, 3,6};
+        int[] arrays = new int[]{1, 3, 6};
         System.out.println(smallestRangeI(arrays, 3));
     }
 }

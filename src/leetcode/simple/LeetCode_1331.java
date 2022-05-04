@@ -85,6 +85,7 @@ public class LeetCode_1331
         }
         return arr;
     }
+
     public static void main(String[] args)
     {
 //        int[] arr = new int[]{40,10,20,30};

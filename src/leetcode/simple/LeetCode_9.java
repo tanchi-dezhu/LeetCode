@@ -1,18 +1,23 @@
 package leetcode.simple;
 
-public class LeetCode_9 {
-    public boolean isPalindrome(int x) {
-        if (x<0) return false;
+public class LeetCode_9
+{
+    public boolean isPalindrome(int x)
+    {
+        if (x < 0) return false;
         int help = 1;
         int tmp = x;
 //        算出x的是几位数的整数
-        while (tmp >= 10) {
+        while (tmp >= 10)
+        {
             help *= 10;
             tmp /= 10;
         }
-        while (x != 0) {
+        while (x != 0)
+        {
 //            判断第一个数字与最后一个数字是不是相同
-            if (x % 10 != x / help) {
+            if (x % 10 != x / help)
+            {
                 return false;
             }
 //            去掉首位和末尾
@@ -24,8 +29,9 @@ public class LeetCode_9 {
         return true;
     }
 
-    public static void main(String[] args) {
-        LeetCode_9 leetCode_nine=new LeetCode_9();
+    public static void main(String[] args)
+    {
+        LeetCode_9 leetCode_nine = new LeetCode_9();
         System.out.println(leetCode_nine.isPalindrome(1231));
     }
 }

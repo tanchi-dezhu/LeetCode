@@ -25,7 +25,7 @@ public class LeetCode_804
         HashSet<String> hashSet = new HashSet<>();
         for (String word : words)
         {
-            char[]  charArray = word.toCharArray();
+            char[] charArray = word.toCharArray();
             String mose = "";
             for (char c : charArray)
             {
@@ -34,7 +34,7 @@ public class LeetCode_804
             hashSet.add(mose);
         }
 
-            return hashSet.size();
+        return hashSet.size();
     }
 
     public static void main(String[] args)

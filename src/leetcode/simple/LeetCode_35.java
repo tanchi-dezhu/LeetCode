@@ -17,7 +17,7 @@ public class LeetCode_35
 
     public static void main(String[] args)
     {
-        int[] ints ={1,3,5,7};
+        int[] ints = {1, 3, 5, 7};
         int i = searchInsert(ints, 9);
         System.out.println(i);
     }
