@@ -16,6 +16,7 @@ public class LeetCode_94
      *     res.add(root.val);
      *     root = root.right;
      * }
+     * 左根右
      * @param root
      * @return
      */
