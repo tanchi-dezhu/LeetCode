@@ -42,7 +42,7 @@ public class LeetCode_875
 
     public static void main(String[] args)
     {
-        int[] array = new int[]{3, 6, 7, 11};
-        System.out.println(minEatingSpeed(array, 8));
+        int[] array = new int[]{2, 3, 5, 7, 10};
+        System.out.println(minEatingSpeed(array, 6));
     }
 }
