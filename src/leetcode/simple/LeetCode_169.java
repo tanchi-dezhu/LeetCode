@@ -59,5 +59,8 @@ public class LeetCode_169
         System.out.println(9 >> 1);//4
         System.out.println(4 >> 1);//2
         System.out.println(3 >> 1);//1
+
+        long a = 101;
+        System.out.println(a>>1);
     }
 }
