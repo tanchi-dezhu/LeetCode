@@ -7,7 +7,7 @@ import java.util.Arrays;
  */
 public class BinarySearch
 {
-	public static int search(int[] params, int left, int right, int param)
+	public static int binarySearch(int[] params, int left, int right, int param)
 	{
 		Arrays.sort(params);
 
@@ -20,7 +20,7 @@ public class BinarySearch
 			return mid;
 		}
 
-		return num < param ? search(params, mid + 1, right, param) : search(params, left, mid, param);
+		return num < param ? binarySearch(params, mid + 1, right, param) : binarySearch(params, left, mid, param);
 	}
 
 	public static void main(String[] args)
@@ -30,7 +30,7 @@ public class BinarySearch
 
 		for (int param : params)
 		{
-			int search = search(params, 0, params.length - 1, param);
+			int search = binarySearch(params, 0, params.length - 1, param);
 			System.out.println(search);
 		}
 	}

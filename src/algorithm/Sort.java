@@ -1,11 +1,11 @@
 package algorithm;
 
 /**
- * 默认排序
+ * 默认排序（插入排序）
  */
 public class Sort
 {
-	public static void Sort(int[] params)
+	public static void sort(int[] params)
 	{
 		for (int i = 0; i < params.length; i++)
 		{
@@ -26,7 +26,7 @@ public class Sort
 	{
 		int[] params = new int[]{57, 68, 59, 52};
 
-		Sort(params);
+		sort(params);
 
 		for (int param : params)
 		{
