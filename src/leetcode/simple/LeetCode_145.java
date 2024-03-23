@@ -1,32 +1,14 @@
 package leetcode.simple;
 
-import java.util.*;
+import leetcode.bean.TreeNode;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Stack;
 
 public class LeetCode_145
 {
-    public static class TreeNode
-    {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode()
-        {
-        }
-
-        TreeNode(int val)
-        {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right)
-        {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
-
     /***
      * 后序遍历核心代码
      *  while(root != null || !stack.isEmpty()){

@@ -1,7 +1,7 @@
 package leetcode.simple;
 
 
-import util.TreeNode;
+import leetcode.bean.TreeNode;
 
 public class LeetCode_965
 {
