@@ -2,64 +2,47 @@ package leetcode.simple;
 
 import leetcode.bean.TreeNode;
 
-import java.util.Queue;
-import java.util.Stack;
-import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.ArrayList;
+import java.util.List;
 
 public class LCP_052
 {
-	private static Stack<TreeNode> stack = new Stack<>();
-
-	private static Queue<TreeNode> queue = new ConcurrentLinkedQueue<>();
-
 	public static TreeNode increasingBST(TreeNode root)
 	{
-		bst(root);
+		List<Integer> resultList = new ArrayList<>();
+		bst(root, resultList);
 
-		TreeNode result = queue.poll();
-		TreeNode tempNode = result;
-		while (!queue.isEmpty())
+		TreeNode result = null;
+		TreeNode tempNode = null;
+		for (int i = 0; i < resultList.size(); i++)
 		{
-			tempNode.right = queue.poll();
-			tempNode = tempNode.right;
-		}
+			TreeNode treeNode = new TreeNode(resultList.get(i));
 
+			if (result == null)
+			{
+				result = treeNode;
+				tempNode = result;
+			}
+			else
+			{
+				tempNode.right = treeNode;
+				tempNode = tempNode.right;
+
+			}
+		}
 		return result;
 	}
 
-	public static void bst(TreeNode root)
+	public static void bst(TreeNode root, List<Integer> resultList)
 	{
 		if (root == null)
 		{
 			return;
 		}
 
-		TreeNode left = root.left;
-		TreeNode right = root.right;
-		if (left != null)
-		{
-			stack.push(root);
-			bst(left);
-		}
-		else if (right != null)
-		{
-			queue.add(new TreeNode(root.val));
-			bst(right);
-		}
-		else
-		{
-			queue.add(new TreeNode(root.val));
-		}
-
-		while (!stack.isEmpty())
-		{
-			TreeNode pop = stack.pop();
-			queue.add(new TreeNode(pop.val));
-			if (pop.right != null)
-			{
-				bst(pop.right);
-			}
-		}
+		bst(root.left, resultList);
+		resultList.add(root.val);
+		bst(root.right, resultList);
 	}
 
 	public static void main(String[] args)
